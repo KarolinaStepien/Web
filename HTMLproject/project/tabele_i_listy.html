@@ -4,8 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <title>tabele i listy</title>
-</head>
 
+    <style>
+        thead {color:green;}
+        tbody {color:blue;}
+        tfoot {color:red;}
+
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
 <body>
     <div>
         <h4>Odnośniki</h4>
@@ -27,77 +37,76 @@
     </div>
 
     <div>
-        <section><a name="1">
+        <section><a id="1">
             <h2>Tabela</h2>
-            <table bordercolor="#ff1493" border="2" bgcolor="#e0ffff" " cellpadding="15">
-                <caption><b>Tytuł tabeli</b></caption>
-                <thead>
-                    <tr>
-                        <th>&nbsp;</th>
-                        <th colspan="2" bgcolor="teal">aaa</th>
-                        <th>ggg</th>
-                    </tr>
-                </thead>
-                <tfoot>
-                    <tr>
-                        <td>st</td>
-                        <td>oo</td>
-                        <td>op</td>
-                        <td>ka</td>
-                    </tr>
-                </tfoot>
-                <tbody>
-                    <tr>
-                        <th>1</th>
-                        <td rowspan="2">bbb</td>
-                        <td>ccc</td>
-                        <td>fff</td>
-                    </tr>
-                    <tr>
-                        <th bgcolor="#483d8b">2</th>
-                        <td colspan="2">eee</td>
-                    </tr>
-                </tbody>
-            </table>
+                <table width="200">
+                    <thead>
+                        <tr>
+                            <th>he</th>
+                            <th>ad</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td>fo</td>
+                            <td>ot</td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2">b</td>
+                            <td>d</td>
+                        </tr>
+                        <tr>
+                            <td>d</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">y</td>
+                        </tr>
+                    </tbody>
+                </table>
         </a></section>
 
-        <section><a name="2">
+        <section><a id="2">
             <h2>Numeracja</h2>
             <ol>
                 <li>Element</li>
                 <li>Element</li>
-                <ul>
-                    <li>Ulement</li>
-                    <li>Ulement</li>
-                    <li>Ulement</li>
-                    <ol type="I">
-                        <li>Ilement</li>
-                        <li>Ilement</li>
-                    </ol>
-                </ul>
-                <li>Element</li>
-                <ol type="a">
-                    <li>Alement</li>
-                    <ul type="circle">
-                        <li>Olement</li>
-                    </ul>
-                    <li>Alement</li>
-                    <li>Alement</li>
-                    <li>Alement</li>
+                <li>Element
                     <ul>
+                    <li>Ulement</li>
+                    <li>Ulement</li>
+                    <li>Ulement
+                        <ol type="I">
+                        <li>Ilement</li>
+                        <li>Ilement</li>
+                    </ol></li>
+                </ul></li>
+                <li>Element
+                    <ol type="a">
+                    <li>Alement</li>
+                    <li>Alement
+                        <ul>
+                        <li>Olement</li>
+                    </ul></li>
+                    <li>Alement</li>
+                    <li>Alement</li>
+                    <li>Alement</li>
+                    <li>Alement
+                        <ul>
                         <li>Mlement</li>
                         <li>Mlement</li>
-                    </ul>
-                </ol>
-                <li>Ulement</li>
-                <ul type="square">
+                    </ul></li>
+                </ol></li>
+                <li>Ulement
+                    <ul>
                     <li>Glement</li>
                     <li>Glement</li>
-                </ul>
+                </ul></li>
             </ol>
         </a></section>
 
-        <section><a name="3">
+        <section><a id="3">
             <h2>Wykaz definicji</h2>
             <strong>Kuropatwa zwyczajna, kuropatwa</strong> <em>(Perdix perdix)</em> – gatunek dużego,
             osiadłego ptaka z rodziny kurowatych <em>(Phasianidae)</em>. Zamieszkuje niemal całą Europę oraz Azję Środkową.<br><br>
