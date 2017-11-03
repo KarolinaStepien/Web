@@ -1,0 +1,22 @@
+.container{
+    font-family: "Comic Sans MS";
+    font-size: 16px;
+    padding-left: 20px;
+}
+
+.container h1{
+    color: darkmagenta;
+    letter-spacing: 1em;
+}
+
+.container h2{
+    color: crimson;
+}
+
+.container h3{
+    color: darkorange;
+}
+
+p{
+    text-indent: 1.5em;
+}

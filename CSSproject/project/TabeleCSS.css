@@ -1,0 +1,29 @@
+.my-table th, td {
+    border: 5px solid crimson;
+    border-collapse: collapse;
+    height: 100px;
+    width: 100px;
+    font-family: "Comic Sans MS";
+    font-size: large;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.my-table tr:hover{
+    background-color: cornflowerblue;
+}
+
+.my-table th{
+    background-color: indianred;
+    color: white;
+    text-transform: uppercase;
+}
+
+.my-table tr{
+    background-color: cornsilk;
+    color: indianred;
+}
+
+.my-table tr td:nth-child(3), tr td:nth-child(4){
+    background-color: darkgray;
+}

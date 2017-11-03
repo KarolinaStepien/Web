@@ -1,0 +1,15 @@
+ol{
+    padding-left: 50px;
+    font-family: "Comic Sans MS";
+    font-size: 16px;
+    color: seagreen;
+    list-style-type: upper-roman;
+}
+
+ol li ol{
+    list-style-type: lower-roman;
+}
+
+ol li ol li ol{
+    list-style-type: lower-greek;
+}

@@ -1,0 +1,209 @@
+/* style for every element, changing the default
+*{
+    margin: 0px;
+    padding: 0px;
+}*/
+
+body{
+    /*colors:
+    hex: #555555 + shortcuts like #333
+    rgb: rgb(0, 255, 255)
+    normal: yellow
+    html5: coral*/
+
+    background-color: #f4f4f4;
+    color: #555;
+
+    /*font-family: "Comic Sans MS"; <-- or font-family:
+        Arial, Verdana, sans-serif; instead of the whole family
+    font-size: 16px;
+    font-weight: normal;*/
+
+    font: normal 13px "Comic Sans MS";
+
+    line-height: 1.6em;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: crimson;
+}
+
+a:hover{
+    color: darkmagenta;
+}
+
+a:active{
+    color: chartreuse;
+}
+
+a:visited{
+    color: gold;
+}
+
+.container{
+    /*content -> padding -> border -> margin (from each side)*/
+
+    /*p{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    }
+
+    p{
+    margin: 5px 10px 5px 10px; (top right bottom left)
+    }
+
+    p{
+    margin: 5px 10px; (top-bottom right-left)
+    }*/
+
+    width: 80%;
+    margin: auto;
+}
+
+.button{
+    padding: 10px 15px;
+    background-color: brown;
+    color: #f4f4f4;
+    border: none;
+}
+
+.button:hover{
+    background-color: red;
+}
+
+.clr{
+    clear: both;
+}
+
+.box-1{
+    background-color: darkslategray;
+    color: rgb(255, 255, 255);
+
+    border: 10px orange solid;
+    border-bottom-style: dotted;
+    border-left-style: groove;
+    border-right-style: double;
+    border-top-style: dashed;
+
+    padding: 0 20px;
+}
+
+.box-1 h1{
+    font-family: "DejaVu Serif";
+    font-weight: 800;
+    font-style: italic;
+    text-decoration: underline;
+    text-transform: lowercase;
+    letter-spacing: 0.1em;
+    word-spacing: 0.4em;
+}
+
+.box-2{
+    border: dotted 4px teal;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.categories{
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 10%;
+}
+
+.categories h2{
+    text-align: center;
+}
+
+.categories ul{
+    padding: 0;
+    padding-left: 20px;
+    list-style: square;
+    /*list-style-image: url('.../images/check.png'); <-- zamiast square wlasny obrazek*/
+}
+
+.categories li{
+    padding-bottom: 8px;
+    border-bottom: dotted firebrick;
+}
+
+.my-form{
+    padding: 20px;
+}
+
+.my-form.form-group{
+    padding: 15px;
+}
+
+.my-form label{
+    display: block;
+}
+
+.my-form input[type="text"], .my-form textarea{
+    padding: 8px;
+    width: 100%;
+}
+
+.block{
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#main-block{
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+#sidebar{
+    float: right;
+    width: 30%;
+    background-color: #cccccc;
+    color: #ffffff;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.p-box{
+    width: 800px;
+    height: 500px;
+    margin-top: 30px;
+    border: 1px solid black;
+    position: relative;
+    background-image: url('../images/light.jpg');
+
+    /*background-repeat: no-repeat;
+    background-position: 100px 200px;
+    background-position: center center;*/
+}
+
+/*u can put elements wherever u want in the box*/
+.p-box h1{
+    position: absolute;
+    top: 40px;
+    right: 500px;
+}
+
+.fix-me{
+    position: fixed;
+    top: 400px;
+}
+
+.my-list li:first-child{
+    background: indianred;
+}
+
+.my-list li:nth-child(5){
+    background: yellow;
+}
+
+.my-list li:nth-child(even){
+    background: cornflowerblue;
+}

@@ -1,0 +1,22 @@
+#pic1{
+    max-width: 20%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    float: left;
+}
+
+#pic2{
+    max-width: 20%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    float: right;
+}
+
+#pic3{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    padding-top: 30px;
+}

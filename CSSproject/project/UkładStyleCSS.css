@@ -1,0 +1,86 @@
+/*format strony*/
+#main-header{
+    color: white;
+    width: 100%;
+    text-align: center;
+}
+
+body{
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    background-color: #cccccc;
+    color: #000;
+    font-family: "Comic Sans MS";
+    font-size: 20px;
+    padding: 30px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a:hover {
+    cursor: default;
+    background-color: #555;
+    color: white;
+}
+
+.content{
+    margin-left:300px;
+    padding:1px 16px;
+    max-width: 960px;
+    background-color: darkgray;
+    width: auto;
+}
+
+p:first-letter{
+    color: crimson;
+    font-style: italic;
+    font-weight: 800;
+}
+
+/*wersja do wydruku*/
+@media print {
+    #main-header{
+        color: black;
+    }
+
+    body{
+        color: black;
+        background-color: white;
+    }
+
+    ul{
+        display: none;
+    }
+
+    .content{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    p:first-letter{
+        color: black;
+    }
+
+    @page  {
+        margin: 2cm;
+    }
+
+    section{
+        page-break-inside: avoid;
+    }
+}
