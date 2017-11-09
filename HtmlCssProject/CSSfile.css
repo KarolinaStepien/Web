@@ -1,0 +1,94 @@
+/*naglowki*/
+.h2style{
+    font-family: fantasy;
+    font-size: 30px;
+    color: darkslategray;
+}
+
+/*paragrafy*/
+.paragraph{
+    font-family: "Verdana";
+}
+
+#formatowanieTekstuStyle{
+    font-size: 16px;
+    font-family: "Verdana";
+}
+
+/*tabele*/
+.my-table th, td {
+    border: 5px solid crimson;
+    border-collapse: collapse;
+    height: 100px;
+    width: 100px;
+    font-family: "Comic Sans MS";
+    font-size: large;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.my-table th{
+    background-color: indianred;
+    color: white;
+    text-transform: uppercase;
+}
+
+.my-table tr{
+    background-color: cornsilk;
+    color: indianred;
+}
+
+.my-table tr td:nth-child(1){
+    background-color: darkgray;
+}
+
+.my-table td:hover{
+    background-color: cornflowerblue;
+}
+
+/*listy*/
+ol{
+    padding-left: 50px;
+    font-family: "Verdana";
+    font-size: 16px;
+    color: seagreen;
+    list-style-type: upper-roman;
+}
+
+ol li ol{
+    list-style-type: lower-roman;
+}
+
+ol li ol li ol{
+    list-style-type: lower-greek;
+}
+
+/*definicje*/
+.defs{
+    font-family: "Verdana";
+    font-size: 16px;
+    color: darkslategray;
+}
+
+.definition{
+    color: brown;
+}
+
+/*obrazy*/
+#pic1{
+    max-width: 20%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    float: left;
+    padding: 1%;
+}
+
+#pic2{
+    max-width: 20%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    float: right;
+    padding: 1%;
+}
