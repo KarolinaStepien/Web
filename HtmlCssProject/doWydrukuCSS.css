@@ -1,0 +1,32 @@
+@media print {
+    #main-header{
+        color: black;
+    }
+
+    body{
+        color: black;
+        background-color: white;
+    }
+
+    ul{
+        display: none;
+    }
+
+    .content{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    p:first-letter{
+        color: black;
+    }
+
+    @page  {
+        margin: 2cm;
+    }
+
+    section{
+        page-break-inside: avoid;
+    }
+}

@@ -5,12 +5,37 @@
     <meta charset="UTF-8">
     <title>formatowanie tekstu</title>
     <link rel="stylesheet" type="text/css" href="CSSfile.css" title="Basic">
+    <link rel="stylesheet" type="text/css" href="alternatywnyCSS.css" title="Alternative">
+    <link rel="stylesheet" type="text/css" href="doWydrukuCSS.css">
 </head>
 
 <body>
-    <div id="formatowanieTekstuStyle">
-        <h1 class="h2style">Nananagłówek</h1>
-        <p>Zawód <em>pilota dał mi okazję do licznych spotkań z wieloma poważnymi ludźmi</em>. Wiele czasu
+    <h1 id="main-header">Słowami fruwają chwile</h1>
+    <div id="navbar">
+        <ul>
+            <li>
+                <a href="podstawyHTML.html">Podstawy HTML</a>
+            </li>
+            <li>
+                <a href="formatowanieTekstu.html">Formatowanie tekstu</a>
+            </li>
+            <li>
+                <a href="tabele_i_listy.html">Tabele i listy</a>
+                <ol>
+                    <li><a href="tabele_i_listy.html#1">Tabela</a></li>
+                    <li><a href="tabele_i_listy.html#2">Lista</a></li>
+                    <li><a href="tabele_i_listy.html#3">Definicje</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="obrazy.html">Obrazy</a>
+            </li>
+        </ul>
+    </div>
+
+    <div id="formatowanieTekstuStyle" class="content">
+        <h2 class="h2style">Nananagłówek</h2>
+        <p class="paragraph">Zawód <em>pilota dał mi okazję do licznych spotkań z wieloma poważnymi ludźmi</em>. Wiele czasu
             spędziłem z dorosłymi. <i>Obserwowałem ich z bliska</i>. Lecz to nie zmieniło mej opinii o nich. Gdy spotykałem dorosłą
             osobę, która wydawała mi się trochę mądrzejsza, <b>robiłem na niej doświadczenie z moim rysunkiem numer 1</b>,
             który stale nosiłem przy sobie. <strong>Chciałem wiedzieć, czy mam do czynienia z osobą rzeczywiście pojętną</strong>. Lecz
@@ -42,7 +67,7 @@
         a<sub>4</sub> &lt; 6<sup>7</sup> + 8<sup>5</sup> &gt; a<sub>2</sub>
         <br>
 
-        <p>Wyrazy połączone spacją w&nbsp;ogóle nie&nbsp;mogą&nbsp;być&nbsp;rozdzielone.
+        <p class="paragraph">Wyrazy połączone spacją w&nbsp;ogóle nie&nbsp;mogą&nbsp;być&nbsp;rozdzielone.
             Wyrazy połączone spacją w&nbsp;ogóle nie&nbsp;mogą&nbsp;być&nbsp;rozdzielone.
             Wyrazy połączone spacją w&nbsp;ogóle nie&nbsp;mogą&nbsp;być&nbsp;rozdzielone.
             Wyrazy połączone spacją w&nbsp;ogóle nie&nbsp;mogą&nbsp;być&nbsp;rozdzielone.

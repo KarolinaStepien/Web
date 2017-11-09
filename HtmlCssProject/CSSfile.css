@@ -1,3 +1,65 @@
+/*body*/
+body{
+    background-color: #f1f1f1;
+}
+
+/*header*/
+#main-header{
+    margin: 1% 0;
+    font-family: "Verdana";
+    font-size: 35px;
+    color: indianred;
+    width: 100%;
+    text-align: center;
+}
+
+/*menu*/
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 300px;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+#navbar li a {
+    display: block;
+    background-color: #cccccc;
+    color: #000;
+    font-family: "Verdana";
+    font-size: 24px;
+    padding: 25px 16px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#navbar li a:hover {
+    cursor: default;
+    background-color: #555;
+    color: white;
+}
+
+#navbar li ol li a{
+    font-size: 18px;
+}
+
+/*zawartość*/
+.content{
+    margin-left:300px;
+    padding:1px 16px;
+    max-width: 960px;
+    background-color: darkgray;
+    width: auto;
+}
+
+p:first-letter{
+    color: #f1f1f1;
+    font-weight: 800;
+}
+
 /*naglowki*/
 .h2style{
     font-family: fantasy;
@@ -5,9 +67,27 @@
     color: darkslategray;
 }
 
+#naglowkiBle{
+    font-family: "Verdana";
+}
+
+#naglowkiBle h1{
+    color: cornflowerblue;
+    letter-spacing: 0.5em;
+}
+
+#naglowkiBle h2{
+    color: #ffff5b;
+}
+
+#naglowkiBle h3{
+    color: mediumpurple;
+}
+
 /*paragrafy*/
 .paragraph{
     font-family: "Verdana";
+    text-indent: 1.5em;
 }
 
 #formatowanieTekstuStyle{
@@ -39,7 +119,7 @@
 }
 
 .my-table tr td:nth-child(1){
-    background-color: darkgray;
+    background-color: lightgrey;
 }
 
 .my-table td:hover{

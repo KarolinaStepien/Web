@@ -5,9 +5,34 @@
     <meta charset="UTF-8">
     <title>tabele i listy</title>
     <link rel="stylesheet" type="text/css" href="CSSfile.css" title="Basic">
+    <link rel="stylesheet" type="text/css" href="alternatywnyCSS.css" title="Alternative">
+    <link rel="stylesheet" type="text/css" href="doWydrukuCSS.css">
 </head>
 <body>
-    <div>
+    <h1 id="main-header">Słowami fruwają chwile</h1>
+    <div id="navbar">
+        <ul>
+            <li>
+                <a href="podstawyHTML.html">Podstawy HTML</a>
+            </li>
+            <li>
+                <a href="formatowanieTekstu.html">Formatowanie tekstu</a>
+            </li>
+            <li>
+                <a href="tabele_i_listy.html">Tabele i listy</a>
+                <ol>
+                    <li><a href="tabele_i_listy.html#1">Tabela</a></li>
+                    <li><a href="tabele_i_listy.html#2">Lista</a></li>
+                    <li><a href="tabele_i_listy.html#3">Definicje</a></li>
+                </ol>
+            </li>
+            <li>
+                <a href="obrazy.html">Obrazy</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content">
         <a id="1">
             <h2 class="h2style">Tabela</h2>
             <table class="my-table">
@@ -39,7 +64,7 @@
                 </tr>
             </table>
         </a></div>
-    <div>
+    <div class="content">
         <a id="2">
             <h2 class="h2style">Lista</h2>
             <ol>
@@ -81,10 +106,10 @@
                     </ol></li>
             </ol>
         </a></div>
-    <div>
+    <div class="content">
         <a id="3">
-                <h2 class="h2style">Wykaz definicji</h2>
             <section class="defs">
+                <h2 class="h2style">Wykaz definicji</h2>
                 <dfn class="definition">Kuropatwa zwyczajna, kuropatwa</dfn> (Perdix perdix) – gatunek dużego,
                 osiadłego ptaka z rodziny kurowatych (Phasianidae). Zamieszkuje niemal całą Europę oraz Azję Środkową.<br><br>
                 <dfn class="definition">Stokrotka</dfn> (Bellis) – liczący 15 gatunków rodzaj z rodziny astrowatych.
