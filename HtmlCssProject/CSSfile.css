@@ -99,8 +99,8 @@ p:first-letter{
 .my-table th, td {
     border: 5px solid crimson;
     border-collapse: collapse;
-    height: 100px;
-    width: 100px;
+    height: 80px;
+    width: 80px;
     font-family: "Comic Sans MS";
     font-size: large;
     text-align: center;

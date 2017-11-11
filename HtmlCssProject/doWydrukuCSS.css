@@ -1,14 +1,14 @@
 @media print {
-    #main-header{
-        color: black;
-    }
-
     body{
         color: black;
         background-color: white;
     }
 
-    ul{
+    #main-header{
+        color: black;
+    }
+
+    #navbar{
         display: none;
     }
 
@@ -22,11 +22,39 @@
         color: black;
     }
 
+    .h2style, #naglowkiBle h1, #naglowkiBle h2, #naglowkiBle h3{
+        color: black;
+    }
+
+    .my-table th, td {
+        border: 5px solid black;
+    }
+
+    .my-table th, .my-table tr{
+        color: black;
+    }
+
+    ol{
+        color: black;
+    }
+
+    .defs, .definition{
+        color: black;
+    }
+
+    img{
+        display: none;
+    }
+
+    #pic1, #pic2{
+        filter: grayscale(100%);
+    }
+
     @page  {
         margin: 2cm;
     }
 
-    section{
+    ol, .defs{
         page-break-inside: avoid;
     }
 }

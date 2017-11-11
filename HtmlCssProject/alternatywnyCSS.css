@@ -1,0 +1,171 @@
+/*body*/
+body{
+    background-color: #f1f1f1;
+}
+
+/*header*/
+#main-header{
+    margin: 1% 0;
+    font-family: "Verdana";
+    font-size: 35px;
+    color: indianred;
+    width: 100%;
+    text-align: center;
+}
+
+/*menu*/
+#navbar{
+    width: 100%;
+    height: 2%;
+    background-color: #f1f1f1;
+}
+
+#navbar ul li{
+    display: table-cell;
+    padding: 0 30px;
+    margin: 0;
+}
+
+#navbar ul li a{
+    background-color: #cccccc;
+    color: #000;
+    font-family: "Verdana";
+    font-size: 24px;
+    text-decoration: none;
+    text-align: center;
+}
+
+#navbar ul li ol li a{
+    font-size: 18px;
+}
+
+#navbar li a:hover {
+    cursor: default;
+    background-color: #555;
+    color: white;
+}
+
+/*zawartość*/
+.content{
+    padding:1px 16px;
+    background-color: darkgray;
+    width: auto;
+}
+
+p:first-letter{
+    color: #f1f1f1;
+    font-weight: 800;
+}
+
+/*naglowki*/
+.h2style{
+    font-family: fantasy;
+    font-size: 30px;
+    color: darkslategray;
+}
+
+#naglowkiBle{
+    font-family: "Verdana";
+}
+
+#naglowkiBle h1{
+    color: cornflowerblue;
+    letter-spacing: 0.5em;
+}
+
+#naglowkiBle h2{
+    color: #ffff5b;
+}
+
+#naglowkiBle h3{
+    color: mediumpurple;
+}
+
+/*paragrafy*/
+.paragraph{
+    font-family: "Verdana";
+    text-indent: 1.5em;
+}
+
+#formatowanieTekstuStyle{
+    font-size: 16px;
+    font-family: "Verdana";
+}
+
+/*tabele*/
+.my-table th, td {
+    border: 5px solid crimson;
+    border-collapse: collapse;
+    height: 80px;
+    width: 80px;
+    font-family: "Comic Sans MS";
+    font-size: large;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.my-table th{
+    background-color: indianred;
+    color: white;
+    text-transform: uppercase;
+}
+
+.my-table tr{
+    background-color: cornsilk;
+    color: indianred;
+}
+
+.my-table tr td:nth-child(1){
+    background-color: lightgrey;
+}
+
+.my-table td:hover{
+    background-color: cornflowerblue;
+}
+
+/*listy*/
+ol{
+    padding-left: 50px;
+    font-family: "Verdana";
+    font-size: 16px;
+    color: seagreen;
+    list-style-type: upper-roman;
+}
+
+ol li ol{
+    list-style-type: lower-roman;
+}
+
+ol li ol li ol{
+    list-style-type: lower-greek;
+}
+
+/*definicje*/
+.defs{
+    font-family: "Verdana";
+    font-size: 16px;
+    color: darkslategray;
+}
+
+.definition{
+    color: brown;
+}
+
+/*obrazy*/
+#pic1{
+    max-width: 20%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    float: left;
+    padding: 1%;
+}
+
+#pic2{
+    max-width: 20%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+    float: right;
+    padding: 1%;
+}
