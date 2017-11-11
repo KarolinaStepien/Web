@@ -18,7 +18,7 @@ body{
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #cccccc;
+    background-color: #ccc;
     display: flex;
     justify-content: space-around;
 }
@@ -28,7 +28,7 @@ body{
     color: #000;
     font-family: "Verdana";
     font-size: 24px;
-    padding: 25px 16px;
+    padding: 24px 16px;
     text-decoration: none;
     text-align: center;
 }
@@ -38,6 +38,7 @@ body{
 }
 
 #navbar li a:hover {
+    cursor: default;
     background-color: #555;
     color: white;
 }

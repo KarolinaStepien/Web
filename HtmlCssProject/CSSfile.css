@@ -27,11 +27,11 @@ body{
 
 #navbar li a {
     display: block;
-    background-color: #cccccc;
+    background-color: #ccc;
     color: #000;
     font-family: "Verdana";
     font-size: 24px;
-    padding: 25px 16px;
+    padding: 24px 16px;
     text-decoration: none;
     text-align: center;
 }
