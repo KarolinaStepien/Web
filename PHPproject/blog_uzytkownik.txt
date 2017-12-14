@@ -1,2 +1,7 @@
 nb-->nu
-nb2-->nu2
+nb2-->nu2A-->A
+B-->B
+C-->C
+D-->D
+E-->E
+F-->F
