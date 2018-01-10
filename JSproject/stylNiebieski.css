@@ -1,0 +1,14 @@
+body {
+    background-color: cornflowerblue;
+    font-family: Verdana;
+    font-size: large;
+    color: white;
+}
+
+a {
+    color: midnightblue;
+}
+
+#chatArea {
+    border: dotted;
+}

@@ -1,0 +1,14 @@
+body {
+    background-color: crimson;
+    font-family: Verdana;
+    font-size: large;
+    color: gold;
+}
+
+a {
+    color: aquamarine;
+}
+
+#chatArea {
+    border: dotted;
+}

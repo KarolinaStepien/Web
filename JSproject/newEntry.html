@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Lab PHP</title>
+    <link id="pagestyle" href="stylDomyślny.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="cssChanger.js"></script>
+    <script type="text/javascript">
+
+        function setCurrentDate() {
+            var dateInput = document.getElementById("date");
+            var d = new Date();
+
+            var dayOfMonth = (d.getDate() < 10 ? '0' : '') + d.getDate();
+            var numberOfMonth = ((d.getMonth()+1) < 10 ? '0' : '') + (d.getMonth()+1);
+
+            dateInput.value = d.getFullYear() + "-" + numberOfMonth + "-" + dayOfMonth;
+        }
+
+        function setCurrentTime() {
+            var timeInput = document.getElementById("time");
+            var d = new Date();
+
+            var minutes = (d.getMinutes() < 10 ? '0' : '') + d.getMinutes();
+            var hours = (d.getHours() < 10 ? '0' : '') + d.getHours();
+
+            timeInput.value = hours + ":" + minutes;
+        }
+
+        function onLoad() {
+            setCurrentDate();
+            setCurrentTime();
+        }
+
+        function dateFunction() {
+            var dateInput = document.getElementById("date");
+            var dateValue = dateInput.value;
+            var split = dateValue.split("-");
+
+            var validDate = true;
+            var year = split[0];
+            if (isNaN(year) || year < 0 || year.length !== 4) {
+                validDate = false;
+            }
+
+            var month = split[1];
+            if (isNaN(month) || month < 0 || month > 13) {
+                validDate = false;
+            }
+
+            var day = split[2];
+            var x = 28;
+            //leap year
+            if (year % 4 === 0 && year % 100 !== 0) {
+                x = 29;
+            }
+            var daysOfYear = [31, x, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+            if (day < 0 || day > daysOfYear[month]) {
+                validDate = false;
+            }
+
+            if (validDate === false) {
+                setCurrentDate();
+            }
+        }
+
+        function timeFunction() {
+            var timeInput = document.getElementById("time");
+            var timeValue = timeInput.value;
+            var split = timeValue.split(":");
+
+            var validTime = true;
+            var hour = split[0];
+            if (isNaN(hour) || hour < 0 || hour > 23) {
+                validTime = false;
+            }
+
+            var minutes = split[1];
+            if (isNaN(minutes) || minutes < 0 || minutes > 59) {
+                validTime = false;
+            }
+
+            if (validTime === false) {
+                setCurrentTime();
+            }
+
+        }
+
+        function moreFilesFunction() {
+            var nextInput = document.createElement('input');
+            nextInput.type = "file";
+            nextInput.className = "files";
+
+            var myForm = document.getElementById("myForm");
+            var i = document.getElementsByClassName("files");
+
+            nextInput.name = "file" + (i.length + 1);
+
+            var butt = document.getElementById("moreFilesButton");
+            myForm.insertBefore(document.createElement("br"), butt);
+            var newLabel = document.createElement("label");
+            newLabel.innerHTML = "Załącznik" + (i.length + 1) + ":";
+            myForm.insertBefore(newLabel, butt);
+            myForm.insertBefore(document.createElement("br"), butt);
+            myForm.insertBefore(nextInput, butt);
+            myForm.insertBefore(document.createElement("br"), butt);
+
+            var numberOfFiles = document.getElementById("numberOfFiles");
+            numberOfFiles.value = i.length + 1;
+        }
+
+    </script>
+</head>
+<body onload="onLoad();onload2()">
+    <form action="wpis.php" method="post" enctype="multipart/form-data" id="myForm">
+        Nazwa użytkownika: <br><input type="text" name="nickName"><br>
+        Hasło: <br><input type="password" name="password"><br><br>
+        <textarea name="entry">Uuu to Twój nowy wpis <3</textarea><br>
+        Data: <br><input type="text" name="date" value="RRRR-MM-DD" id="date" onchange="dateFunction()"><br><br>
+        <!--<span id="dateWarning"></span><br>-->
+        <!--  <input type="date" name="date" value="<?php echo date('Y-m-d'); ?>"/> <br/>-->
+        Godzina: <br><input type="text" name="time" value="GG:MM" id="time" onchange="timeFunction()"><br><br>
+        <!--<span id="timeWarning"></span><br><br>-->
+        <!-- <input type="time" name="time" value = "<?php echo date('H:i');?>" /> <br/>-->
+
+        <label> Załącznik1: </label><br><input type="file" name="file1" class="files"><br><br>
+
+        <input type="button" value="KOLEJNY PLIK" id="moreFilesButton" onclick="moreFilesFunction()"><br><br>
+        <input type="text" value="1" hidden="hidden" id="numberOfFiles" name="numberOfFiles">
+        <input type="submit" value="WYŚLIJ"><br><br>
+        <input type="reset" value="RESET">
+    </form>
+</body>
+</html>
